@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #8dbcbe, #a287bc);
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 120px 10px 10px 10px;
+
+    border: solid 3px black;
+    border-radius: 50%;
+    background: rgb(166, 162, 162);
+}
+#circle1{
+    /* Apply animation to move circles up and down */
+ animation: moveUpDown 700ms linear infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-70px); /* Adjust the value to control the movement distance */
+    }
+}
+#circle2{
+    /* Apply animation to move circles up and down */
+ animation: moveUpDown 600ms linear infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-80px); /* Adjust the value to control the movement distance */
+    }
+}
+#circle3{
+    /* Apply animation to move circles up and down */
+ animation: moveUpDown 500ms linear infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-90px); /* Adjust the value to control the movement distance */
+    }
+}
+#circle4{
+    /* Apply animation to move circles up and down */
+ animation: moveUpDown 400ms linear infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-60px); /* Adjust the value to control the movement distance */
+    }
+}
+#circle5{
+    /* Apply animation to move circles up and down */
+ animation: moveUpDown 300ms linear infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50px); /* Adjust the value to control the movement distance */
+    }
+}
+.fill {
+    background-image: url('https://source.unsplash.com/random/150x150');
+    height: 145px;
+    width: 145px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background-color: #333;
+    border-color: white;
+    border-style: dashed;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
